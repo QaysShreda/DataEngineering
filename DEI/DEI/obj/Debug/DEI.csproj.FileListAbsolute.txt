@@ -1,0 +1,30 @@
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\DEI.exe.config
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\DEI.exe
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\DEI.pdb
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\obj\Debug\DEI.csprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\obj\Debug\DEI.Form1.resources
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\obj\Debug\DEI.Properties.Resources.resources
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\obj\Debug\DEI.csproj.GenerateResource.Cache
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\obj\Debug\DEI.exe
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\obj\Debug\DEI.pdb
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\ExcelDataReader.DataSet.dll
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\ExcelDataReader.dll
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\ExcelDataReader.pdb
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\ExcelDataReader.xml
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\ExcelDataReader.DataSet.pdb
+c:\users\pc\documents\visual studio 2015\Projects\DEI\DEI\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\DEI.exe.config
+C:\Users\PC1\Desktop\Prog\DEI\DEI\obj\Debug\DEI.exe
+C:\Users\PC1\Desktop\Prog\DEI\DEI\obj\Debug\DEI.pdb
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\DEI.exe
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\DEI.pdb
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\ExcelDataReader.dll
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\ExcelDataReader.pdb
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\ExcelDataReader.xml
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\PC1\Desktop\Prog\DEI\DEI\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\PC1\Desktop\Prog\DEI\DEI\obj\Debug\DEI.csprojResolveAssemblyReference.cache
+C:\Users\PC1\Desktop\Prog\DEI\DEI\obj\Debug\DEI.Form1.resources
+C:\Users\PC1\Desktop\Prog\DEI\DEI\obj\Debug\DEI.Properties.Resources.resources
+C:\Users\PC1\Desktop\Prog\DEI\DEI\obj\Debug\DEI.csproj.GenerateResource.Cache

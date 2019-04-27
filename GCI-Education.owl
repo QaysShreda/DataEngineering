@@ -1,21 +1,26 @@
 ﻿<?xml version="1.0"?>
 
 
-<!DOCTYPE Ontology [
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
+<rdf:RDF xmlns:sch="http://www.mohe.ps/Schools#" xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema-datatypes">
+  
 
 
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+
+
+<owl:Ontology rdf:about="sch" xmlns="http://www.mohe.ps/Schools#"
      xml:base="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl">
+     </owl:Ontology>
+
+    
+    
+    
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
@@ -45,49 +50,8 @@
     <Prefix name="iso37120" IRI="http://ontology.eil.utoronto.ca/GCI/ISO37120.owl#"/>
     <Import>http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl</Import>
     <Import>http://ontology.eil.utoronto.ca/icontact.owl</Import>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="cc:license"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">1.0 28 May 2015</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Global City Indicator Education Ontology developed by the Enterprise Integration Lab,  Mechanical &amp; Industrial Engineering, University of Toronto. http://eil.utoronto.ca
+ 
 
-Extends the Foundation Ontology for Global City Indicators to cover the Education Indicators.
-
-See: Fox, M.S., (2013), &quot;A Foundation Ontology for Global City Indicators&quot;, Global City Institute Working Paper, Global Cities Institute, University of Toronto
-
-All papers can be found at: http://www.eil.utoronto.ca/applications/smartcities/
-
-Contact: Mark S. Fox, msf@eil.utoronto.ca</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">gcie</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Global City Indicators Education Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">http://ontology.eil.utoronto.ca/GCI/ISO37120/Education.owl#</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mark S. Fox (msf@eil.utoronto.ca)</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="adms:relatedDocumentation"/>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://eil.utoronto.ca/smartcities/papers/GCI-Education.pdf</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="#BachelorDegree"/>
-    </Declaration>
     <Declaration>
         <Class IRI="#Certification"/>
     </Declaration>
@@ -1041,15 +1005,7 @@ Contact: Mark S. Fox, msf@eil.utoronto.ca</Literal>
             <ObjectProperty IRI="#for_SchoolYear"/>
             <Class IRI="#SchoolYear"/>
         </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Placement"/>
-        <DataHasValue>
-            <DataProperty IRI="#min_Days_Worked"/>
-            <Literal datatypeIRI="&xsd;integer">1</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
+    </SubClassOf>    <SubClassOf>
         <Class IRI="#Placement"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#days_Worked"/>
@@ -1667,175 +1623,6 @@ Contact: Mark S. Fox, msf@eil.utoronto.ca</Literal>
         <DataProperty IRI="#certification_Date"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Cohort</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">We introduce the concept of a cohort, i.e., the students who started primary or secondary school together that entered the final year of each together.  For example, for any given year, e.g., 2014, the cohort is defined to be the subset of students who entered the final year of the grade level in 2014, who also were in the starting grade of the grade level together.  If primary school covers grades one through six, then the starting year for the 2014 cohort is 2009.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Course</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Courses are defined as having a result (i.e., Grade) and some comment.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#EducationFacility</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Education Facilities including public and private.
-</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#EducationStaff</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">we define an education staff member as organization agent (as defined in the Organization ontology) that has at least one Placement</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#EducationStaffInstructional</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Everyone who teaches are assists in teaching students.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Enrollment</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Students do not attend grades, they are enrolled in Education Programs.  Each year of regular school corresponds to a separate Enrollment, allowing for the capturing of what courses they took, the year and whether they were full or part time..</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GradeLevel</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Provides the basic groupings of grades, i.e., primary vs secondary. It is defined as having a starting_grade and and ending_grade which differrs across countries, provinces, states.  It also specifies parentCountry which is to be an instance of geonames Feature and schema.org Country,</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GradeLevelPrimary</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Defines what Grades are part of the Primary GradeLevel.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GradeLevelPrimaryCanadaOntario</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Primary grade level for the province of Ontario in Canada.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GradeLevelSecondary</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Defines what Grades are part of the Secondary GradeLevel.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Placement</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Placement provides the details of where an Education Staff member worked, the School Year, how many days a week they worked, and courses they taught, if any. An Education Staff member will have many Placements, one for each year that they worked at a School, or more than one per year if they worked at multiple locations during the same year.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Program</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A ‘Program’ is anything that requires ‘Certification’. It also defines what it means to be “Fulltime’ in terms of the number of hours required over a designated period of time, such as a ‘day’, ‘week’, ‘mont’h or ‘year’. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SP_Type</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Types of school programs, including secondary, primary.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <IRI>#SchoolYear</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Define the starting Month/Year and ending Month/Year for a school year.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Student</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A student is defined to be a Person that has attended one or more Educational Programs.  Each Grade they attend is represented as a separate Educational Program due to the information that is required to represent it. For example, a student may attend different grades at different schools, they may be part time in one grade and full time in another, etc. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#StudentSecondarySchool</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A secondary school student is a Student who takes secondary level courses.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Teacher</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A teacher is a subclass of instructional education staff that has a Placement in which they teach a minimum of one course.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#certified_By</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Intended use:
-  Domain: Program or School
-  Range: City or GovernmentOrganization
-
-Capture that a particular program has been certified by a city to be taught by a school, or that a school has been certified by a government organization.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#delivers_Program</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Intended Use:
-  Domain: Organization
-  Range: Program
-
-current use is to identify what school programs a school delivers.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#educational_Staff_At</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Links an educational staff member to an educational facility they work at.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ending_Grade</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Used to define the last grade in a GradeLevel.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#enrolled_Program</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Links a student to an educational program that provides the particulars of what course they took, where and when.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has_Certification</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Intended Use:
-    Range: Certification
-
-To be used to denote that a School or Program has been certified by a Government Organization.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has_Enrollment</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Intended use:
-    Domain: Person
-    Range: Enrollment
-
-Links a person to the education programs that they have been enrolled in.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has_Fulltime_Hours</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Represents the number of hours, on a daily, weekly, monthly or yearly basis, that a student must attend the program to be classified as Full time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#starting_Grade</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Used to define the first grade in a GradeLevel.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>gci:City</AbbreviatedIRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">We extend the City class by adding in what the grade levels are within the city.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>cyc:Mx4rvViNGpwpEbGdrcN5Y29ycA</AbbreviatedIRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Student</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>cyc:Mx4rvVkFrJwpEbGdrcN5Y29ycA</AbbreviatedIRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Teacher</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://sws.geonames.org/6251999</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Canada</Literal>
-    </AnnotationAssertion>
-</Ontology>
 
 
-
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
-
+       </rdf:RDF>

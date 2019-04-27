@@ -14,9 +14,6 @@
      ontologyIRI="http://ontology.eil.utoronto.ca/GCI/Education/GCI-Education.owl">
      </owl:Ontology>
 
-    
-    
-    
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
@@ -46,8 +43,7 @@
     <Prefix name="iso37120" IRI="http://ontology.eil.utoronto.ca/GCI/ISO37120.owl#"/>
     <Import>http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl</Import>
     <Import>http://ontology.eil.utoronto.ca/icontact.owl</Import>
- 
-
+         
     <Declaration>
         <Class IRI="#Certification"/>
     </Declaration>

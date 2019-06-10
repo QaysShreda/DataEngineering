@@ -117,17 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="jaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\jaro.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value> 
+Vladmir Levenshtein created a distance algorithm in 1965 . 
+This tells us the number of edits needed to turn one string into another.  With Levenshtein distance, we measure similarity and match approximate strings with fuzzy logic.
+</value>
   </data>
-  <data name="string1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\string1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value> 
+The algorithm used is based on the calculation of the sum of the lengths of the longest strings common to both strings.
+In this article, which from two strings returns a rate of similarity between two strings.</value>
   </data>
-  <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\Capture.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\Dis.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>
+The Jaro distance is a measure of similarity between two strings.
+
+The higher the Jaro distance for two strings is, the more similar the strings are.
+
+The score is normalized such that   0   equates to no similarity and   1   is an exact match.</value>
   </data>
 </root>

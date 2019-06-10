@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace DEI
 {
-     class StreamWriter
+    class StreamWriter
     {
+        private string fileName;
 
+        public StreamWriter(string fileName)
+        {
+            this.fileName = fileName;
+        }
     }
 }
